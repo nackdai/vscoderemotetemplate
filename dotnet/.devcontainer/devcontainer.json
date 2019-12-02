@@ -1,0 +1,8 @@
+{
+  "name": ".NET Core devcontainer",
+  "dockerFile": "Dockerfile",
+  "remote.containers.workspaceMountConsistency": "delegated",
+  "runArgs": [],
+  "extensions": ["ms-vscode.csharp"],
+  "settings": {}
+}

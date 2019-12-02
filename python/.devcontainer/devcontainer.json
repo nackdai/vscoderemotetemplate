@@ -1,0 +1,20 @@
+{
+	"name": "Python dev container",
+	"dockerFile": "Dockerfile",
+	"settings": {
+		"python.linting.pylintEnabled": true,
+		"python.linting.pylintPath": "/usr/local/bin/pylint",
+		"python.linting.flake8Enabled": true,
+		"python.linting.lintOnSave": true,
+		"python.linting.flake8Args": [
+			"--max-line-length",
+			"80"
+		],
+		"python.formatting.provider": "black",
+		"editor.formatOnSave": true,
+		"files.insertFinalNewline": true
+	},
+	"extensions": [
+		"ms-python.python"
+	]
+}
