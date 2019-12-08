@@ -1,0 +1,15 @@
+{
+  "name": "Rust dev container",
+  "dockerFile": "Dockerfile",
+  "settings": { 
+    "lldb.adapterType": "bundled",
+    "lldb.executable": "/usr/bin/lldb",
+    "editor.formatOnSave": true,
+		"files.insertFinalNewline": true
+  },
+   "extensions": [
+     "rust-lang.rust",
+     "bungcip.better-toml",
+     "vadimcn.vscode-lldb"
+  ]
+}
