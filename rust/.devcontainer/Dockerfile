@@ -26,3 +26,8 @@ ENV PATH=/root/.cargo/bin:$PATH
 
 RUN rustup update \
   && rustup component add rust-analysis rust-src rls rustfmt clippy
+
+# Clean up
+RUN apt-get autoremove -y \
+  && apt-get clean -y \
+  && rm -rf /var/lib/apt/lists/*

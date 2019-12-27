@@ -7,3 +7,8 @@ RUN python3.7 get-pip.py --user
 ENV PATH ${PATH}:/root/.local/bin
 
 RUN pip3.7 install pylint black flake8
+
+# Clean up
+RUN apt-get autoremove -y \
+    && apt-get clean -y \
+    && rm -rf /var/lib/apt/lists/*
