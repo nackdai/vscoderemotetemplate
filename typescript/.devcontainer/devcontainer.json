@@ -1,0 +1,15 @@
+{
+    "name": "Typescript dev container",
+    "dockerFile": "Dockerfile",
+    "remote.containers.workspaceMountConsistency": "delegated",
+    "runArgs": [
+        "-p",
+        "80:80"
+    ],
+    "settings": {
+      "editor.formatOnSave": true,
+      "files.insertFinalNewline": true
+    },
+    "extensions": [
+    ]
+  }
